@@ -2,6 +2,8 @@
 
 Personal portfolio for [penrune](https://github.com/penrune), adapted from the Reactfolio template and focused on current public GitHub projects.
 
+Live site: [penrune.github.io/reactfolio](https://penrune.github.io/reactfolio)
+
 ## What is included
 
 - GitHub-first homepage and contact flow
