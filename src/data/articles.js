@@ -2,64 +2,41 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "18 June 2026",
+		title: "Turning a template into a real portfolio",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
-		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
-		],
+			"The first useful step for this site was replacing placeholder content with real GitHub projects and links.",
+		keywords: ["penrune", "portfolio", "Reactfolio", "GitHub"],
 		style: `
 				.article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
-				}
-
-				.randImage {
-					align-self: center;
-					outline: 2px solid red;
+					gap: 1rem;
 				}
 				`,
 		body: (
 			<React.Fragment>
 				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
-					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
-						className="randImage"
-					/>
+					<div className="paragraph">
+						This portfolio started as a clean React template. The
+						most important adjustment was making it honest: replacing
+						sample names, filler project cards, and generic SEO with
+						the public work that exists under the penrune GitHub
+						account.
+					</div>
+					<div className="paragraph">
+						For now, the project list focuses on the strongest public
+						signals: UM Delivery, Algo Olio, and this portfolio repo.
+						As more repositories gain demos, writeups, and clearer
+						READMEs, this page can keep evolving into a sharper
+						record of the work.
+					</div>
 				</div>
 			</React.Fragment>
 		),
 	};
 }
 
-function article_2() {
-	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
-		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
-		style: ``,
-		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
-		],
-		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
-	};
-}
-
-const myArticles = [article_1, article_2];
+const myArticles = [article_1];
 
 export default myArticles;

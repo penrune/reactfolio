@@ -15,77 +15,95 @@ import "./styles/socials.css";
 const Socials = () => {
 	return (
 		<div className="socials">
-			<div className="social">
-				<a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faTwitter}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on Twitter</div>
-				</a>
-			</div>
-
-			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faGithub}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on GitHub</div>
-				</a>
-			</div>
-
-			<div className="social">
-				<a
-					href={INFO.socials.linkedin}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faLinkedin}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on LinkedIn</div>
-				</a>
-			</div>
-
-			<div className="social">
-				<a
-					href={INFO.socials.instagram}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faInstagram}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on Instagram</div>
-				</a>
-			</div>
-
-			<div className="email">
-				<div className="email-wrapper">
+			{INFO.socials.twitter && (
+				<div className="social">
 					<a
-						href={`mailto:${INFO.main.email}`}
+						href={INFO.socials.twitter}
 						target="_blank"
 						rel="noreferrer"
 					>
 						<div className="social-icon">
-							<FontAwesomeIcon icon={faEnvelope} />
+							<FontAwesomeIcon
+								icon={faTwitter}
+								className="social-icon"
+							/>
 						</div>
-
-						<div className="social-text">{INFO.main.email}</div>
+						<div className="social-text">Follow on Twitter</div>
 					</a>
 				</div>
-			</div>
+			)}
+
+			{INFO.socials.github && (
+				<div className="social">
+					<a
+						href={INFO.socials.github}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="social-icon">
+							<FontAwesomeIcon
+								icon={faGithub}
+								className="social-icon"
+							/>
+						</div>
+						<div className="social-text">Follow on GitHub</div>
+					</a>
+				</div>
+			)}
+
+			{INFO.socials.linkedin && (
+				<div className="social">
+					<a
+						href={INFO.socials.linkedin}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="social-icon">
+							<FontAwesomeIcon
+								icon={faLinkedin}
+								className="social-icon"
+							/>
+						</div>
+						<div className="social-text">Follow on LinkedIn</div>
+					</a>
+				</div>
+			)}
+
+			{INFO.socials.instagram && (
+				<div className="social">
+					<a
+						href={INFO.socials.instagram}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="social-icon">
+							<FontAwesomeIcon
+								icon={faInstagram}
+								className="social-icon"
+							/>
+						</div>
+						<div className="social-text">Follow on Instagram</div>
+					</a>
+				</div>
+			)}
+
+			{INFO.main.email && (
+				<div className="email">
+					<div className="email-wrapper">
+						<a
+							href={`mailto:${INFO.main.email}`}
+							target="_blank"
+							rel="noreferrer"
+						>
+							<div className="social-icon">
+								<FontAwesomeIcon icon={faEnvelope} />
+							</div>
+
+							<div className="social-text">{INFO.main.email}</div>
+						</a>
+					</div>
+				</div>
+			)}
 		</div>
 	);
 };

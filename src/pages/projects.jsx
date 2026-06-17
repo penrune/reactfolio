@@ -39,21 +39,16 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+							Public projects I am building, studying, and
+							refining.
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+							This is a small, current selection from my public
+							GitHub account. I am keeping the list focused on
+							repositories that show active learning, working
+							code, or a live demo instead of filling the page
+							with placeholders.
 						</div>
 
 						<div className="projects-list">
